@@ -7,37 +7,64 @@ inquirer
     /* Pass your questions in here */
     {
         type: 'input',
-        message: 'What is your name?',
-        name: 'name',
+        message: 'Title of your project:',
+        name: 'title',
       },
       {
         type: 'input',
-        message: 'Where are you based out of location-wise?',
-        name: 'location',
+        message: 'Brief description of your project:',
+        name: 'description',
       },
       {
         type: 'input',
-        message: 'Write a quick bio describing yourself(one or two sentences is fine):',
-        name: 'bio',
+        message: 'Brief description on how to install your project:',
+        name: 'install',
       },
       {
         type: 'input',
-        message: 'Please link your Linkedin here:',
-        name: 'linkedin',
+        message: 'Brief description on how to use your project:',
+        name: 'usage',
       },
       {
         type: 'input',
-        message: 'Please link your GitHub here:',
+        message: 'Describe how others can contribute to your project:',
+        name: 'contribute',
+      },
+      {
+        type: 'input',
+        message: 'Describe some simple instructions for testing:',
+        name: 'test',
+      },
+      {
+        type: 'list',
+        message: 'Select the license used for your project:',
+        choices: [new inquirer.Separator(), "MIT", "GNU GPLv3", "Apache"],
+        name: 'license',
+      },
+      {
+        type: 'input',
+        message: 'GitHub name:',
         name: 'github',
-      }
+      },
+      {
+        type: 'input',
+        message: 'Email best suited for people to reach you at:',
+        name: 'email',
+      },
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
-    var name = answers.name;
-    var location = answers.location;
-    var bio = answers.bio;
-    var linkedin = answers.linkedin;
+    var title = answers.title;
+    var description = answers.description;
+    var install = answers.install;
+    var usage = answers.usage;
+    var contribute = answers.contribute;
+    var test = answers.test;
+
+    var license = answers.license;
+
     var github = answers.github;
+    var email = answers.email;
 
 
     var readmeContent = `
