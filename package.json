@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Anthony-GG/readme-generator/issues"
   },
-  "homepage": "https://github.com/Anthony-GG/readme-generator#readme"
+  "homepage": "https://github.com/Anthony-GG/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^9.2.10"
+  }
 }
