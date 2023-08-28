@@ -62,45 +62,68 @@ inquirer
     var test = answers.test;
 
     var license = answers.license;
+    var licenseBadge = "";
 
     var github = answers.github;
     var email = answers.email;
 
+    switch(license){
+    case "MIT":
+        licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        break;
+    case "GNU GPLv3":
+        licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+        break;
+    case "Apache":
+        licenseBadge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+        break;
+    }
+
+
 
     var readmeContent = `
-    <!doctype html>
+# ${title}
 
-    <html lang="en">
-    <head>
-    <meta charset="utf-8">
+${licenseBadge}
+    
+## Description
+    
+${description}
 
-    <title></title>
-    <link rel="stylesheet" href="./assets/stylesheets/normalize.css">
-    <link rel="stylesheet" href="./style.css">
+## Table of Contents
 
-    </head>
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contrubuting](#contributing)
+- [Testing](#testing)
+- [License](#license)
+- [Contact Me](#questions)
 
-    <body>
+## Installation
 
-    <h1>Name:</h1>
-    <h2>${name}<h2>
+${install}
 
-    <h1>Location:</h1>
-    <h2>${location}<h2>
+## Usage
 
-    <h1>Bio:</h1>
-    <p>${bio}<p>
+${usage}
 
-    <h3>Linkedin:</h3>
-    <a href=${linkedin}>${linkedin}</a>
+## Contributing
 
-    <h3>GitHub:</h3>
-    <a href=${github}>${github}</a>
+${contribute}
 
-    <script src="./assets/scripts/script.js"></script>
-    </body>
+## Testing
 
-    `;
+${test}
+
+## License
+
+${license}
+
+## Questions?
+
+You can find me here on GitHub at https://www.github.com/${github} <br><br>
+Otherwise, feel free to reach me at ${email}
+`;
 
 
     fs.writeFile('./README.md', readmeContent, err => {
