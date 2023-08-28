@@ -1,11 +1,13 @@
 
-# Robin's Wild Story
+# CWRU Bootcamp Challenge 7 - README Generator
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+#### NOTICE: THIS README WAS GENERATED USING THE PROGRAM SHOWCASED IN THIS PROJECT!
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
 ## Description
     
-This is a story about Final Fantasy 14 characters.
+The goal of this project was to create a README generator using javascript, nodeJS and the packages we explored this week during class (Inquirer and writing using FS). 
 
 ## Table of Contents
 
@@ -18,25 +20,26 @@ This is a story about Final Fantasy 14 characters.
 
 ## Installation
 
-Simple download the RTF file, open it and you'll be good to go.
+Simply download the index.js file and the package.json files, run npm install to get the required packages and then run index.js using node in the command line!
 
 ## Usage
 
-Open it in any text file editor.
+After doing the procedure done during installation, just run 'node index.js' in the command line and follow the prompts given to create a README.md file!
 
 ## Contributing
 
-N/A
+Feel free to fork this repo if you have anything you want to add, change, or remove in regards to this project. I love feedback!
 
 ## Testing
 
-N/A
+For testing on this specific project, I would just follow the usage instructions and see if there's anything you take away from it.
 
 ## License
 
-Apache
+The license used in this project was the MIT license! Please reference the LICENSE file inside of the repository.
 
 ## Questions?
 
 You can find me here on GitHub at https://www.github.com/Anthony-GG <br><br>
 Otherwise, feel free to reach me at anthony@vayneglory.com
+---

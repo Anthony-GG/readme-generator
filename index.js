@@ -117,12 +117,13 @@ ${test}
 
 ## License
 
-${license}
+The license used in this project was the ${license} license! Please reference the LICENSE file inside of the repository.
 
 ## Questions?
 
 You can find me here on GitHub at https://www.github.com/${github} <br><br>
 Otherwise, feel free to reach me at ${email}
+---
 `;
 
 
