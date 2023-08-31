@@ -1,7 +1,10 @@
+//Imports required packages
 import fs from 'fs';
 import inquirer from 'inquirer';
 
-
+//Purpose: To ask the user questions and accept inputs to generate a README.md file using the information they provide
+//Parameters: Inputs from the user
+//Returns: README.md file (technically accomplished the fs.writeFile at the bottom, but the whole process starts here)
 inquirer
   .prompt([
     /* Pass your questions in here */
@@ -53,7 +56,7 @@ inquirer
       },
   ])
   .then((answers) => {
-    // Use user feedback for... whatever!!
+    // Initilizes variables corresponding to each of the input responses for readability sake
     var title = answers.title;
     var description = answers.description;
     var install = answers.install;
@@ -67,6 +70,7 @@ inquirer
     var github = answers.github;
     var email = answers.email;
 
+    //a switch statement that determines which license was selected and adds a corresponding to badge link to the variable licenseBadge
     switch(license){
     case "MIT":
         licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
@@ -80,8 +84,8 @@ inquirer
     }
 
 
-
-    var readmeContent = `
+//Content of the readme file with variables added in throughout
+var readmeContent = `
 # ${title}
 
 ${licenseBadge}
@@ -126,7 +130,7 @@ Otherwise, feel free to reach me at ${email}
 ---
 `;
 
-
+//Function that actually writes the information to a file
     fs.writeFile('./README.md', readmeContent, err => {
         if (err) {
         console.error(err);
