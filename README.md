@@ -26,6 +26,11 @@ Simply download the index.js file and the package.json files, run npm install to
 
 After doing the procedure done during installation, just run 'node index.js' in the command line and follow the prompts given to create a README.md file!
 
+## Video Example
+
+Here is a link to the video example showcasing the installation and usage of this project:
+<a href="https://www.youtube.com/watch?v=BBKlHoSKU28">Click Here!</a> 
+
 ## Contributing
 
 Feel free to fork this repo if you have anything you want to add, change, or remove in regards to this project. I love feedback!
