@@ -1,5 +1,5 @@
 
-# CWRU Bootcamp Challenge 7 - README Generator
+# CWRU Bootcamp Challenge 09 - README Generator
 
 #### NOTICE: THIS README WAS GENERATED USING THE PROGRAM SHOWCASED IN THIS PROJECT!
 
